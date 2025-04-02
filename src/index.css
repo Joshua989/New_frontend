@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* styles.css */
+:root {
+    --font-inter: 'Inter', sans-serif;
+  }
+  
+  /* Apply it to body or globally */
+  body {
+    font-family: var(--font-inter);
+  
+}
