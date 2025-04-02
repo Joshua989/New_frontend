@@ -4,7 +4,6 @@ import { Shield, Smartphone, Database, Layout, Lock, Key, ArrowRight, Check } fr
 const VultisigSolution = () => {
   const [activeFeature, setActiveFeature] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
   
   useEffect(() => {
@@ -159,7 +158,7 @@ const VultisigSolution = () => {
   interface Feature {
     title: string;
     description: string;
-    icon: JSX.Element;
+    icon: React.ReactNode;
     color: string;
     accent: string;
     glowColor: string;
