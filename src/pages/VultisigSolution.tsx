@@ -7,7 +7,6 @@ const VultisigSolution = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   
   useEffect(() => {
-    setIsVisible(true);
     const interval = setInterval(() => {
       setActiveFeature((prev) => (prev + 1) % features.length);
     }, 5000);
